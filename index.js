@@ -9,6 +9,7 @@ app.get("/", (req, res) => {
   res.send(" Go to translate")
 })
 
+// for page not found
 app.get('/*', (req, res) => { res.send("No page found 😎") })
 
 app.get('/translate/yoda.json', (req, res) => {
